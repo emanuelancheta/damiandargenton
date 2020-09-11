@@ -12,40 +12,60 @@
     </head>
 
     <body>
-        <div class="row">
-          <div class="tituloLogo col-md-6 col-sm-12">
+        <div class="row header">
+          <div class="tituloLogo col-md-3 col-sm-12">
             <!-- Aqui va el logo y botones de acceso a redes sociales-->
             <h1 class="logo">DAMIAN DARGENTON</h1>
             <h4 class="subtitulo">Photographer and Digital Retoucher</h4>
           </div>
 
-          <div class="col-md-6 col-sm-12">
-            <ul class="flotarDerecha">
+
+          <nav role="navigation" id="navigation" class="col-md-8 col-sm-6">
+            <div id="menuToggle"> 
+              <input type="checkbox" id="checkbox"/>     
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul id="menu">
+                    <div id="titulosLogoMovil" class="tituloLogo col-md-3 col-sm-12">
+                      <!-- Aqui va el logo y botones de acceso a redes sociales-->
+                      <h1 id="logomovil" class="logo">DAMIAN DARGENTON</h1>
+                      <h4 id="subtitulomovil" class="subtitulo">Photographer and Digital Retoucher</h4>
+                    </div>
+
+                <a href="./index.html" class="nav-item pulse"><li>INICIO</li></a>
+                <a href="./views/catalogo.html"><li>CATALOGO</li></a>
+                <a href="./views/finalart.html"><li>FINAL ART</li></a>
+                <a href="./views/publicidad.html"><li>PUBLICIDAD</li></a>
+                <a href="./views/test.html" target="_blank"><li>TEST</li></a>
+                <a href="./views/biografia.html"><li>ABOUT</li></a>
+                
+                <ul class="d-flex justify-content-center justify-content-around col-sm-3">
+                  <li id="iconosMovil"><a href="mailto:damianfaganeldargenton1991@gmail.com" target="_blank" class="hvr-icon-grow-rotate hvr-icon"><img src="./images/iconos/emailblanco.png" class="iconoredes hvr-icon-grow-rotate hvr-icon"></a></li> <!---Redirecciona a Mail-->
+                  <li id="iconosMovil"><a href="https://www.instagram.com/damiandargenton/?hl=es-la" target="_blank" class="hvr-icon-grow-rotate hvr-icon"><img src="./images/iconos/instagramblanco.png" class="iconoredes hvr-icon-grow-rotate hvr-icon"></a></li> <!---Redirecciona a pagina de Instagram-->
+                  <li id="iconosMovil"><a href="https://www.behance.net/df_photogr9061" target="_blank" class="hvr-icon-grow-rotate hvr-icon"><img src="./images/iconos/behanceblanco.png" class="iconoredes hvr-icon-grow-rotate hvr-icon"></a></li> <!--Redirecciona a una cuenta de Behance-->
+                </ul>
+                  
+              </ul>
+            </div>
+          </nav>
+       
+          <div class="col-md-1 col-sm-3 .d-sm-none .d-md-block">
+            <ul class="flotarDerecha" id="flotarDerecha">
                 <li><a href="mailto:damianfaganeldargenton1991@gmail.com" target="_blank" class="hvr-icon-grow-rotate hvr-icon"><img src="./images/iconos/email.png" class="iconoredes hvr-icon-grow-rotate hvr-icon"></a></li> <!---Redirecciona a Mail-->
                 <li><a href="https://www.instagram.com/damiandargenton/?hl=es-la" target="_blank" class="hvr-icon-grow-rotate hvr-icon"><img src="./images/iconos/instagram.png" class="iconoredes hvr-icon-grow-rotate hvr-icon"></a></li> <!---Redirecciona a pagina de Instagram-->
                 <li><a href="https://www.behance.net/df_photogr9061" target="_blank" class="hvr-icon-grow-rotate hvr-icon"><img src="./images/iconos/behance.png" class="iconoredes hvr-icon-grow-rotate hvr-icon"></a></li> <!--Redirecciona a una cuenta de Behance-->
             </ul>
           </div>
-
         </div>
-  
-        <!--Botones de navegacion a las demas secciones/paginas-->
-        <nav class="col-md-12 col-sm-12 container justify-content-center">
-            <ul class="nav col-md-12 d-flex justify-content-center">
-                <li class="nav-item hvr-underline-reveal pulse"><a href="./index.html" class="nav-link">INICIO</a></li>
-                <li class="nav-item hvr-underline-reveal"><a href="./views/catalogo.html" class="nav-link">CATALOGO</a></li>
-                <li class="nav-item hvr-underline-reveal"><a href="./views/finalart.html" class="nav-link">FINAL ART</a></li>
-                <li class="nav-item hvr-underline-reveal"><a href="./views/publicidad.html" class="nav-link">PUBLICIDAD</a></li>
-                <li class="nav-item hvr-underline-reveal"><a href="./views/test.html" class="nav-link">TEST</a></li>
-            </ul>
-        </nav>
   
         <!-----  SLIDER ------->
         
-        <div class="row justify-content-center pullUp">
-          <div class="container-white col-md-8 col-sm-12">
+        <div id="slider" class="slider row justify-content-center pullUp">
+          <div class="container col-md-9 col-sm-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" id="lineCarousel">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -88,30 +108,10 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  
-        <!--Foto e informacion del fotografo-->
-        <div class="row d-flex seccionPie">
-            <div class="col-md-2 col-sm-12 justify-content-center">
-              <img src="./images/footer/imgfotografo.jpeg" class="fotoFotografo">
-            </div>
-            <div class="col-md-9 col-sm-10">
-              <h3 class="tituloFooter">Damian Dargenton</h3>
-              <p class="text-justify textoBio">Damian Faganel Dargenton reside actualmente en la provincia de Córdoba, Argentina. Es fotógrafo y retocador digital desde
-                hace 8 años, habiendo estudiado en la <strong>ESAA</strong> (Escuela Superior de Artes Aplicadas) de la Universidad Provincial de Córdoba.
-                Además cursó la carrera de cine de la <strong>UNC</strong> (Universidad Nacional de Córdoba). Trabajó en diversas áreas de la fotografía:
-                moda, publicidad, editorial, retrato de autor, eventos sociales y fotografía artistica. Aunque mantiene una fotográfica heteróclita,
-                se especializa en fotografía de moda y publicitaria.</p>
-            </div>
-        </div>
-
-        <div class="row">
-
-              <div class="col-lg-6 col-sm-12"></div>
-              
-              <div class="desarrollador col-lg-6 col-sm-12">
+        <footer class="row">
+              <div class="desarrollador col-lg-12 col-sm-12 .float-right">
                   <p id="textoDesarrollador">Desarrollado por |<a href="https://www.instagram.com/astronemas/?hl=es-la" target="_blank">ASTRONEMAS</a></p>
-              </div>
-              
-        </div>
+              </div>        
+        </footer>
     </body>
 </html>
