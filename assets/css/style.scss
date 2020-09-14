@@ -246,6 +246,7 @@ ul#menu a li {
       flex-direction: column;
       width: 450px;
       height: auto;
+      padding-bottom: 300px;
       
     }
 
@@ -449,6 +450,7 @@ div#form {
 label {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-decoration: underline;
+  font-size: 26px;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {

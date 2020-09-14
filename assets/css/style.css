@@ -187,7 +187,8 @@ ul#menu a li {
     display: flex;
     flex-direction: column;
     width: 450px;
-    height: auto; }
+    height: auto;
+    padding-bottom: 300px; }
   ul#menu a li {
     color: white;
     font-family: 'goboldthin';
@@ -328,7 +329,8 @@ div#form {
 
 label {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-size: 26px; }
 
 @media (min-width: 600px) and (max-width: 1024px) {
   img.fotoFotografo {
