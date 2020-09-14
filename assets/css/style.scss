@@ -43,7 +43,9 @@ div#titulosLogoMovil {
   display: none;
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+
+
+@media only screen and (min-device-width: 950px) and (max-device-width: 1024px) {
   h1.logo {
     font-size: 15px;
     margin-left: 20px;
@@ -110,7 +112,7 @@ div#titulosLogoMovil {
 /*------------BOTONES NAV ENTRE PAGINAS-----------------*/
 
 div#menuToggle {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 #navigation {
@@ -451,6 +453,7 @@ p.textoBio {
     margin-left: 10px;
     text-justify: inter-word;
     color: white;
+    display: inline;
     p strong {
         font-size: 1em;
     }
@@ -464,6 +467,12 @@ label {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-decoration: underline;
   font-size: 26px;
+}
+
+label#labelName {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 img.fotoFotografo {

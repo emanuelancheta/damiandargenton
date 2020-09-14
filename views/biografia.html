@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <meta name="viewport" content="view=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/css/animations.css">
-        
+        <link rel="stylesheet" href="../assets/css/animations.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Assistant:wght@200;300;600&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap" rel="stylesheet">
     </head>
 
@@ -77,15 +76,18 @@
 
       <div id="form" class="row d-flex justify-content-around">
         <div id="cnt-form" class="col-md-6">
-          <form id="contact-form" class="contact" name="contact-form" method="post" action="formulariocontacto.php">
+          <form id="contact-form" class="contact" name="contact-form" method="post" enctype="text/plain" action="mailto:jey@gmail.com">
             <label>FORMULARIO DE CONTACTO</label>
             <div class="form-group">
+              <label id="labelName">Nombre completo:</label>
               <input type="text" name="nombre" class="form-control mail-field" required="required" placeholder="Ingrese su nombre">
             </div>
             <div class="form-group">
+              <label id="labelName">Email:</label>
               <input type="text" name="email" class="form-control mail-field" required="required" placeholder="Ingrese su email">
             </div>
             <div class="form-group">
+              <label id="labelName">Consulta:</label>
               <textarea name="mensaje" id="message" required="required" class="form-control" rows="6" placeholder="Ingrese texto"></textarea>
             </div>
             <div class="form-group">
