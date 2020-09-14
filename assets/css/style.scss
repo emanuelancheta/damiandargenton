@@ -127,6 +127,7 @@ ul#menu {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  padding-left: 0px;
 }
 
 ul#menu a li {
@@ -138,7 +139,7 @@ ul#menu a li {
 
 @media (min-width: 600px) and (max-width: 1024px) {
     ul.nav {
-        margin-right: 0px;
+        margin-right: 10px;
         position: relative;
         height: auto;
         top: 0px;
@@ -307,7 +308,9 @@ li#iconosMovil {
   display: none;
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+
+
+@media only screen and (min-device-width: 770px) and (max-device-width: 1024px) {
     .iconoredes {
       width: 20px;
       height: 20px;
@@ -321,6 +324,7 @@ li#iconosMovil {
       bottom: 40px;
   }
 }
+
 
 @media only screen and (max-width: 600px) {
     ul.flotarDerecha {
@@ -405,7 +409,7 @@ div.container {
 
 .row {
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 h5.tituloTecnica {
@@ -435,70 +439,35 @@ p.detalleTecnica {
 
 /*------------------ ESTILO DE PAGINA ABOUT/BIOGRAFIA   ------------------*/
 
-
-div.seccionPie {
-    background-color: black;
-}
-
-h3.tituloBio {
-    margin-left: 10px;
-    margin-top: 20px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: white;
-}
-
-p.textoBio {
-    font-size: 0.8em;
-    overflow: hidden;
-    margin-left: 10px;
-    text-justify: inter-word;
-    color: white;
-    display: inline;
-    p strong {
-        font-size: 1em;
-    }
-}
-
-div#form {
-  margin-top: 20px;
-}
-
-label {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-decoration: underline;
-  font-size: 26px;
-}
-
-label#labelName {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 18px;
-  text-decoration: none;
+div.seccionBio {
+  background-color: black;
 }
 
 img.fotoFotografo {
-      height: 150px;
-      width: 150px;
-      justify-content: center;
-  }
-
-
-@media only screen and (max-width: 600px) {
-    img.fotoFotografo {
-        height: 100px;
-        width: 100px;
-        justify-content: center;
-       
-    }
-    h3 {
-        display: block;
-        font-size: 0.7em;
-    }
-    p {
-        display: inline;;
-        font-size: 1em;
-        float: left;
-    }
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding-bottom: 0px;
+  margin-right: 10px;
 }
+
+h3.tituloBio {
+  font-family: 'Assistant', sans-serif;
+  color: whitesmoke;
+  text-indent: 8px;
+  font-weight: bold;
+}
+
+div.seccionBio p.textoBio {
+  color: white;
+  font-family: 'Assistant', sans-serif;
+  font-size: 16px;
+  text-indent: 8px;
+
+}
+
+
+
 
 
 /*------------ DESARROLLADOR ----------*/
