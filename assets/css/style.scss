@@ -171,10 +171,11 @@ ul#menu a li {
       display: flex;
       flex-direction: column;
       width: 450px;
-      height: auto;
+      height: 900px;
       padding-bottom: 100px;
-      padding-left: 45px;
+      padding-left: 60px;
     }
+
 
   ul#menu a li {
       color: white;
@@ -443,6 +444,7 @@ p.detalleTecnica {
 
 div.seccionBio {
     background-color: black;
+    padding: 10px;
 }
 
 img.fotoFotografo {
@@ -458,6 +460,7 @@ h3.tituloBio {
 
 p.textoBio {
     font-size: 0.8em;
+    margin-left: 10px;
     color: white;
     p strong {
         font-size: 1em;
@@ -485,12 +488,7 @@ label#labelName {
         height: 100px;
         width: 100px;
         justify-content: center;
-    }
-
-    p.textoBio {
-      font-size: 1.2em;
-    
-    
+    }   
 }
 
 
