@@ -126,7 +126,8 @@ ul#menu a li {
     flex-direction: column;
     width: 450px;
     height: 900px;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    padding-left: 45px; }
   ul#menu a li {
     color: white;
     font-family: 'goboldthin';
@@ -320,25 +321,39 @@ div.seccionBio {
   background-color: black; }
 
 img.fotoFotografo {
-  width: 200px;
-  height: 200px;
-  float: left;
-  padding-bottom: 0px;
-  margin-right: 10px; }
+  height: 150px;
+  width: 150px;
+  float: left; }
 
 h3.tituloBio {
-  font-family: 'Assistant', sans-serif;
-  color: whitesmoke;
-  text-indent: 8px;
-  font-weight: bold;
-  background-color: black; }
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white; }
 
-div.seccionBio p.textoBio {
-  color: white;
-  font-family: 'Assistant', sans-serif;
-  font-size: 16px;
-  text-indent: 8px;
-  background-color: black; }
+p.textoBio {
+  font-size: 0.8em;
+  margin-left: 10px;
+  color: white; }
+  p.textoBio p strong {
+    font-size: 1em; }
+
+div#form {
+  margin: 10px; }
+
+label {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: underline;
+  font-size: 26px; }
+
+label#labelName {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  img.fotoFotografo {
+    height: 100px;
+    width: 100px;
+    justify-content: center; } }
 
 /*------------ DESARROLLADOR ----------*/
 div.desarrollador p, div.desarrollador a {
