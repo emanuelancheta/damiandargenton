@@ -308,7 +308,7 @@ img.fotoFotografo {
   height: 250px;
   width: 250px; }
 
-h3.tituloFooter {
+h3.tituloBio {
   margin-left: 10px;
   margin-top: 20px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -323,8 +323,12 @@ p.textoBio {
   p.textoBio p strong {
     font-size: 1em; }
 
-p.textoDesarrollador {
-  color: black; }
+div#form {
+  margin-top: 20px; }
+
+label {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: underline; }
 
 @media (min-width: 600px) and (max-width: 1024px) {
   img.fotoFotografo {
@@ -350,6 +354,7 @@ p.textoDesarrollador {
     display: block;
     font-size: 1em; } }
 
+/*------------ DESARROLLADOR ----------*/
 div.desarrollador p, div.desarrollador a {
   position: relative;
   float: right;
