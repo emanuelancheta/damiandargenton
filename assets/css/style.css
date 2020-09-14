@@ -227,8 +227,8 @@ li#iconosMovil {
     position: relative;
     padding-left: 0px;
     right: auto;
-    left: 130px;
-    bottom: 40px; } }
+    left: 30px;
+    bottom: 20px; } }
 
 @media only screen and (max-width: 600px) {
   ul.flotarDerecha {
